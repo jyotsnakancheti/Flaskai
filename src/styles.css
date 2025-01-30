@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.trigger {
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.trigger:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 400px;
+  height: 10px;
+  background-color: #e5e7eb;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #10b981;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Button container to ensure horizontal layout */
+.button-container {
+  display: flex;
+  flex-direction: row; /* Align boxes horizontally */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Wrap to new line if too many boxes */
+  margin-top: 10px;
+}
+
+/* Individual boxes */
+.box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Box colors */
+.green {
+  background-color: #10b981;
+}
+
+.red {
+  background-color: #6b7280;
+}
